@@ -64,11 +64,11 @@
     }
 
     $(function() {
-$('#btnA').click(function(e) {
-btnAClick(e);
-});
-init();
-});
+    $('#btnA').click(function(e) {
+    btnAClick(e);
+    });
+    init();
+    });
 
 
     var debug = false;
@@ -203,7 +203,7 @@ init();
     function btnCClick(e){
         alarm();
         active = false;
-        period = 60* parseInt( $("#minute").val() ) + parseInt( $("#second").val() );
+        period = 20* parseInt( $("#minute").val() ) + parseInt( $("#second").val() );
         $("#time").html("経過時間： 0");
         $("#remain").html("残り時間： " + period);
     }
