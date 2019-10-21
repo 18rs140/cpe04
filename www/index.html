@@ -63,7 +63,18 @@
         return str.substring(str.length-2);        
     }
 
+    $(function() {
+$('#btnA').click(function(e) {
+btnAClick(e);
+});
+init();
+});
+
+
     var debug = false;
+
+    
+    
     // Statusがクリックされた時の処理
     function setDebugMode(e){
         debug = !debug;
